@@ -10,7 +10,7 @@ export default function HeroSection() {
       <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
         <div className="text-center md:text-left">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-headline mb-6">
-            <span className="block animate-text-focus-in" style={{ animationDelay: '0.1s' }}>Hi, I&apos;m <span className="text-primary">Your Name</span>.</span>
+            <span className="block animate-text-focus-in" style={{ animationDelay: '0.1s' }}>Hi, I&apos;m <span className="text-primary">Ewi Damilola</span>.</span>
             <span className="block text-2xl sm:text-3xl md:text-4xl text-accent mt-2 animate-text-focus-in" style={{ animationDelay: '0.4s' }}>Full-Stack Web Developer</span>
             <span className="block text-2xl sm:text-3xl md:text-4xl text-accent animate-text-focus-in" style={{ animationDelay: '0.7s' }}>& UI/UX Designer</span>
           </h1>
@@ -23,18 +23,21 @@ export default function HeroSection() {
                 Get In Touch <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground hover:scale-110 hover:rotate-[3deg] active:scale-100 transition-all duration-300 ease-out">
-              Download CV <Download className="ml-2 h-5 w-5" />
-            </Button>
+            <a href="/EwiDamilolaResumeCV.pdf" download>
+              <Button size="lg" variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground hover:scale-110 hover:rotate-[3deg] active:scale-100 transition-all duration-300 ease-out">
+                Download CV <Download className="ml-2 h-5 w-5" />
+              </Button>
+            </a>
+
           </div>
         </div>
         <div className="relative aspect-square max-w-md mx-auto md:max-w-none">
           <Image
-            src="/images/hero-developer.png" 
+            src="/images/image3.jpg" 
             alt="Developer working on a laptop"
             data-ai-hint="developer coding"
-            width={600}
-            height={600}
+            width={300}
+            height={300}
             className="rounded-lg shadow-2xl object-cover"
             priority
           />
