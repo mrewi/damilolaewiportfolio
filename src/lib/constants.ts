@@ -24,9 +24,9 @@ export const FEATURED_PROJECTS: Project[] = [
   {
     id: 'project-1',
     title: 'Learno-MTU',
-    description: 'A full-featured e-commerce platform with Next.js, providing seamless shopping experiences and robust admin controls.',
-    imageUrl: '/images/project-learno-mtu.png', /* Updated path */
-    imageHint: 'online store',
+    description: 'A communication platform designed for educational institutions, enabling seamless interaction between students and teachers, similar to Discord but tailored for a school environment with features like class channels, assignment discussions, and secure file sharing.',
+    imageUrl: '/images/project-learno-mtu.png',
+    imageHint: 'school communication app', // Updated imageHint to better match the new description
     techStack: [commonSkills.nextjs, commonSkills.ts, commonSkills.nodejs, commonSkills.mongodb, commonSkills.tailwind],
     liveLink: 'http://learno-mtu.vercel.app',
     repoLink: '#',
@@ -35,7 +35,7 @@ export const FEATURED_PROJECTS: Project[] = [
     id: 'project-2',
     title: 'Data Visualization Dashboard',
     description: 'An interactive dashboard for visualizing complex datasets, built with React and D3.js, offering real-time insights.',
-    imageUrl: '/images/project-data-viz.png', /* Updated path, example */
+    imageUrl: '/images/project-data-viz.png', 
     imageHint: 'charts graphs',
     techStack: [commonSkills.react, commonSkills.ts, commonSkills.nodejs, commonSkills.postgresql, commonSkills.analytics],
     liveLink: '#',
@@ -44,7 +44,7 @@ export const FEATURED_PROJECTS: Project[] = [
     id: 'project-3',
     title: 'Mobile-First Social App',
     description: 'A social networking application designed with a mobile-first approach, focusing on user engagement and intuitive UI/UX.',
-    imageUrl: '/images/project-social-app.png', /* Updated path, example */
+    imageUrl: '/images/project-social-app.png', 
     imageHint: 'mobile app',
     techStack: [commonSkills.react, commonSkills.js, commonSkills.figma, commonSkills.responsive, commonSkills.api],
     liveLink: '#',
@@ -59,7 +59,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '2024-07-15',
     author: 'Your Name',
     excerpt: 'Explore the power of the Next.js App Router and how it revolutionizes web development with Server Components and more.',
-    imageUrl: '/images/blog-nextjs14.png', /* Updated path */
+    imageUrl: '/images/blog-nextjs14.png', 
     imageHint: 'code editor',
     category: 'Next.js',
     content: `
@@ -98,7 +98,7 @@ export default function HomePage() {
     date: '2024-06-28',
     author: 'Your Name',
     excerpt: 'A comprehensive guide to the fundamental principles that drive successful user interface and user experience design.',
-    imageUrl: '/images/blog-ux-design.png', /* Updated path */
+    imageUrl: '/images/blog-ux-design.png', 
     imageHint: 'design tools',
     category: 'UI/UX Design',
     content: `
@@ -141,3 +141,4 @@ export const ABOUT_ME_TEXT = `
 <p class="text-lg mb-4">I thrive in collaborative environments and am always eager to learn and adapt to new challenges. Whether it's architecting a scalable backend, designing an intuitive user interface, or optimizing for performance, I bring dedication and precision to every project.</p>
 <p class="text-lg">Let's build something amazing together!</p>
 `;
+
