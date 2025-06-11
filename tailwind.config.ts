@@ -1,3 +1,4 @@
+
 import type {Config} from 'tailwindcss';
 
 export default {
@@ -88,10 +89,27 @@ export default {
             height: '0',
           },
         },
+        'crazy-float': {
+          '0%, 100%': { transform: 'translateY(0) rotate(0deg)', opacity: '0.5' },
+          '25%': { transform: 'translateY(-15px) rotate(10deg)', opacity: '0.7' },
+          '50%': { transform: 'translateY(5px) rotate(-5deg)', opacity: '0.4' },
+          '75%': { transform: 'translateY(-10px) rotate(15deg)', opacity: '0.6' },
+        },
+        'crazy-spin': {
+          from: { transform: 'rotate(0deg) scale(1)' },
+          to: { transform: 'rotate(360deg) scale(1.1)' },
+        },
+        'text-focus-in': {
+          '0%': { filter: 'blur(12px)', opacity: '0' },
+          '100%': { filter: 'blur(0px)', opacity: '1' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        'crazy-float': 'crazy-float 5s ease-in-out infinite',
+        'crazy-spin': 'crazy-spin 3s linear infinite alternate',
+        'text-focus-in': 'text-focus-in 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both',
       },
     },
   },
