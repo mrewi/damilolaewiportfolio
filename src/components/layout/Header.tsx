@@ -1,7 +1,9 @@
+
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu, Briefcase, Home, Rss, UserCircle, Send } from 'lucide-react';
+import { ModeToggle } from '@/components/shared/ModeToggle';
 
 const navItems = [
   { href: '/', label: 'Home', icon: Home },
@@ -18,7 +20,7 @@ export default function Header() {
         <Link href="/" className="text-2xl font-bold font-headline text-primary hover:text-primary/80 transition-colors">
           FullStackFolio
         </Link>
-        <nav className="hidden md:flex space-x-6">
+        <nav className="hidden md:flex items-center space-x-2">
           {navItems.map((item) => (
             <Button key={item.label} variant="ghost" asChild>
               <Link href={item.href} className="text-foreground hover:text-primary transition-colors">
@@ -26,8 +28,10 @@ export default function Header() {
               </Link>
             </Button>
           ))}
+          <ModeToggle />
         </nav>
-        <div className="md:hidden">
+        <div className="md:hidden flex items-center space-x-2">
+          <ModeToggle />
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="outline" size="icon">
