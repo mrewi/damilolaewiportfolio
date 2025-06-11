@@ -90,7 +90,7 @@ export default function ContactForm() {
             <FormItem>
               <FormLabel>Full Name</FormLabel>
               <FormControl>
-                <Input placeholder="John Doe" {...field} />
+                <Input placeholder="Ewi Damilola" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>

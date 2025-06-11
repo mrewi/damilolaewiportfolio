@@ -30,7 +30,7 @@ export default function HeroSection() {
         </div>
         <div className="relative aspect-square max-w-md mx-auto md:max-w-none">
           <Image
-            src="https://placehold.co/600x600.png"
+            src="/images/hero-developer.png" /* Updated path */
             alt="Developer working on a laptop"
             data-ai-hint="developer coding"
             width={600}

@@ -6,7 +6,7 @@ import MainLayout from '@/components/layout/MainLayout';
 import { ThemeProvider } from '@/components/layout/ThemeProvider';
 
 export const metadata: Metadata = {
-  title: 'FullStackFolio - Portfolio',
+  title: 'Ewi Damilola',
   description: 'A modern portfolio for a Full-Stack Web Developer and UI/UX Designer.',
 };
 

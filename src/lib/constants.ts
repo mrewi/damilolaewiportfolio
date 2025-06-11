@@ -1,3 +1,4 @@
+
 import type { Project, BlogPost, Skill } from '@/types';
 import { Code2, Shapes, Braces, Server, PenTool, Database, Smartphone, Layers, BarChart3, Settings, Globe } from 'lucide-react';
 
@@ -13,35 +14,28 @@ const commonSkills: Record<string, Skill> = {
   postgresql: { name: 'PostgreSQL', icon: Database },
   docker: { name: 'Docker', icon: Settings },
   responsive: { name: 'Responsive Design', icon: Smartphone },
-  uxui: { name: 'UI/UX Design', icon: PenTool }, // Replaced Palette with PenTool
+  uxui: { name: 'UI/UX Design', icon: PenTool },
   api: { name: 'API Development', icon: Globe },
   analytics: { name: 'Data Analytics', icon: BarChart3 },
 };
-// For custom icons if needed. Example for Figma, replace PenTool if a better SVG is found.
-// const FigmaIcon = (props: React.SVGProps<SVGSVGElement>) => (
-//   <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-//     {/* Figma-like SVG path */}
-//   </svg>
-// );
-// commonSkills.figma = { name: 'Figma', icon: FigmaIcon };
 
 
 export const FEATURED_PROJECTS: Project[] = [
   {
     id: 'project-1',
-    title: 'E-commerce Platform',
+    title: 'Learno-MTU',
     description: 'A full-featured e-commerce platform with Next.js, providing seamless shopping experiences and robust admin controls.',
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: '/images/project-learno-mtu.png', /* Updated path */
     imageHint: 'online store',
-    techStack: [commonSkills.nextjs, commonSkills.react, commonSkills.ts, commonSkills.nodejs, commonSkills.mongodb, commonSkills.tailwind],
-    liveLink: '#',
+    techStack: [commonSkills.nextjs, commonSkills.ts, commonSkills.nodejs, commonSkills.mongodb, commonSkills.tailwind],
+    liveLink: 'http://learno-mtu.vercel.app',
     repoLink: '#',
   },
   {
     id: 'project-2',
     title: 'Data Visualization Dashboard',
     description: 'An interactive dashboard for visualizing complex datasets, built with React and D3.js, offering real-time insights.',
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: '/images/project-data-viz.png', /* Updated path, example */
     imageHint: 'charts graphs',
     techStack: [commonSkills.react, commonSkills.ts, commonSkills.nodejs, commonSkills.postgresql, commonSkills.analytics],
     liveLink: '#',
@@ -50,7 +44,7 @@ export const FEATURED_PROJECTS: Project[] = [
     id: 'project-3',
     title: 'Mobile-First Social App',
     description: 'A social networking application designed with a mobile-first approach, focusing on user engagement and intuitive UI/UX.',
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: '/images/project-social-app.png', /* Updated path, example */
     imageHint: 'mobile app',
     techStack: [commonSkills.react, commonSkills.js, commonSkills.figma, commonSkills.responsive, commonSkills.api],
     liveLink: '#',
@@ -65,7 +59,7 @@ export const BLOG_POSTS: BlogPost[] = [
     date: '2024-07-15',
     author: 'Your Name',
     excerpt: 'Explore the power of the Next.js App Router and how it revolutionizes web development with Server Components and more.',
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: '/images/blog-nextjs14.png', /* Updated path */
     imageHint: 'code editor',
     category: 'Next.js',
     content: `
@@ -104,7 +98,7 @@ export default function HomePage() {
     date: '2024-06-28',
     author: 'Your Name',
     excerpt: 'A comprehensive guide to the fundamental principles that drive successful user interface and user experience design.',
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: '/images/blog-ux-design.png', /* Updated path */
     imageHint: 'design tools',
     category: 'UI/UX Design',
     content: `

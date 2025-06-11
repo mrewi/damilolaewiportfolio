@@ -13,7 +13,7 @@ export default function AboutSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative aspect-square max-w-md mx-auto md:order-last">
             <Image
-              src="https://placehold.co/500x500.png"
+              src="/images/profile-photo.png" /* Updated path */
               alt="Profile picture"
               data-ai-hint="professional portrait"
               width={500}
