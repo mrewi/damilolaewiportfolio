@@ -9,10 +9,10 @@ export default function HeroSection() {
     <section id="home" className="py-20 md:py-32 bg-gradient-to-br from-background to-secondary/30 rounded-lg shadow-lg overflow-hidden">
       <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
         <div className="text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-headline mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-headline mb-6">
             <span className="block animate-text-focus-in" style={{ animationDelay: '0.1s' }}>Hi, I&apos;m <span className="text-primary">Your Name</span>.</span>
-            <span className="block text-3xl md:text-4xl text-accent mt-2 animate-text-focus-in" style={{ animationDelay: '0.4s' }}>Full-Stack Web Developer</span>
-            <span className="block text-3xl md:text-4xl text-accent animate-text-focus-in" style={{ animationDelay: '0.7s' }}>& UI/UX Designer</span>
+            <span className="block text-2xl sm:text-3xl md:text-4xl text-accent mt-2 animate-text-focus-in" style={{ animationDelay: '0.4s' }}>Full-Stack Web Developer</span>
+            <span className="block text-2xl sm:text-3xl md:text-4xl text-accent animate-text-focus-in" style={{ animationDelay: '0.7s' }}>& UI/UX Designer</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto md:mx-0 animate-text-focus-in" style={{ animationDelay: '1s' }}>
             I create seamless, engaging, and high-performance web applications from concept to deployment, specializing in Next.js, React, and modern UI/UX practices.
@@ -30,7 +30,7 @@ export default function HeroSection() {
         </div>
         <div className="relative aspect-square max-w-md mx-auto md:max-w-none">
           <Image
-            src="/images/hero-developer.png" /* Updated path */
+            src="/images/hero-developer.png" 
             alt="Developer working on a laptop"
             data-ai-hint="developer coding"
             width={600}
